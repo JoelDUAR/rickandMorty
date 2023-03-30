@@ -1,0 +1,29 @@
+.ContainerDetail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.loading{
+    color: rgba(1, 24, 202, 0.995);
+    text-decoration: double;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 300%;
+    position: relative;
+    top: -15vw;
+}
+
+
+@media only screen and (max-width: 376px) {
+
+    .loading{
+        color: rgba(255, 255, 255, 0.995);
+        top:0vw;
+    }
+
+
+}

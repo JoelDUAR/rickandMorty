@@ -1,0 +1,156 @@
+.divContenedor{
+    width: 17vw;
+    height: 70vh;
+    background: rgba(6, 167, 254, 0.096);
+    border: 1px solid #000000;
+    margin: 2vh 3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: 10px 5px 50px 4px #000000;
+    border-radius: 20px;
+    transition: 0.4s ease-in-out;
+}
+
+.divContenedor:hover{
+    background: rgba(6, 167, 254, 0.539);
+    box-shadow: 10px 5px 50px 4px rgba(6, 167, 254, 0.096); 
+    width: 18vw;
+    height: 73vh;  
+}
+
+.divContenedorInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.divContenedorImg{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2vh;
+}
+
+.imageCard{
+    width: 25vw;
+    height: 31vh;
+    border-radius: 20px;
+}
+
+.linkCard{
+    text-decoration: none;
+    width: 100%;
+    font-size:100%;
+    text-align: center;
+    color:  #666666;
+    transition: 0.4s ease;
+}
+
+.linkCard:hover{
+    text-decoration: underline;
+    font-weight: bold;
+    color: rgb(2, 148, 2);
+
+}
+
+.infoCard{
+    height: 7vh;
+    margin: 0vh;
+    font-family: poppins, sans-serif;
+    color: #666666;
+
+}
+
+.btnClose{
+ border-radius: 50%;
+ background-color: #f41818;
+ border: none;
+}
+.btnClose:hover{
+    background-color: #3649f8;
+    
+}
+
+.buttonFav{
+    border-radius: 50%;
+    margin-top: 0.4vh;
+    background-color: #3649f8;
+}
+
+@media only screen and (min-width: 1280px) and (max-width: 1921px){
+    .buttonFav{
+        width: 3vw;
+        height: 3vh;
+    }
+
+}
+
+@media only screen and (max-width: 1280px) {
+    .divContenedor{
+        width: 26vw;
+    }
+    
+    .divContenedor:hover{
+        width: 27vw;
+    }
+
+    .btnClose{
+        border-radius: 50%;
+        width: 5vw;
+        height: 4vh
+       }
+
+       .buttonFav{
+        width: 4vw;
+        height: 3vh;
+    }
+
+}
+
+@media only screen and (max-width: 680px) {
+    .divContenedor{
+        width: 87vw;
+        height: 72vh;
+        background: rgba(6, 167, 254, 0.651);
+    }
+
+    .divContenedor:hover{
+        width: 91vw;
+        height: 76vh;
+    }
+
+.infoCard{
+    color: aliceblue;
+}
+
+.linkCard{
+    color:  #ffffff;
+}
+
+    .divContenedorImg{
+        width: 70vw;
+        display: flex;
+        justify-content: center;
+        margin-top: 2vh;
+    }
+    
+    .imageCard{
+        width: 70vw;
+        height: 31vh;
+    }
+
+    .btnClose{
+        width: 8vw;
+        height: 4vh;
+       }
+
+
+       .buttonFav{
+        width:10vw;
+        height: 4vh;
+    }
+}

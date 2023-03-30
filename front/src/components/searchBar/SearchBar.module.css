@@ -1,0 +1,42 @@
+.containerSearch{
+    display: flex;
+    justify-content: space-around;
+}
+
+.inputSearch{
+    width: 4vw;
+    height: 3vh;
+    border-radius: 20px;
+    margin: 2.5vh 0.5vw;
+    border: none;
+}
+
+.inputSearch:hover{
+    background-color: rgb(96, 141, 238);
+    border: 3px solid rgb(96, 212, 238);
+    cursor: pointer;
+}
+
+.inputSearch:active{
+    width: 3.5vw;
+    height: 1.5vh;
+}
+
+@media only screen and (max-width: 1024px){
+    .inputSearch{
+        width: 6vw;
+        height: 4vh;
+        margin: 2.5vh 0.2vw;
+    }
+  
+  }
+
+  @media only screen and (max-width: 376px){
+
+    .inputSearch{
+        width: 18vw;
+        height: 4vh;
+        }
+
+  }
+
