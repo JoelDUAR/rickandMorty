@@ -1,22 +1,24 @@
 import style from "../card/Card.module.css";
 import style2 from "../Form/Form.module.css";
 import style3 from "./Detail.module.css"
-import { useEffect, useState } from "react";
+import { useEffect} from "react";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
-import axios from "axios";
+import { useDispatch, useSelector } from "react-redux";
+import { getCharacterDetail, cleanDetail } from "../../redux/actions";
 
 const Detail = () => {
-  const [character, setCharacter] = useState({});
-  const URL_BASE = "https://localhost:3001/rickandmorty"
+  const dispatch = useDispatch();
+  const character = useSelector((state) => state.characterDetail);
   const { detailId } = useParams();
 
   useEffect(() => {
-  
-    axios.get(`${URL_BASE}/detail/${detailId}`)
-    .then((response) => setCharacter(response.data));
-    // eslint-disable-next-line
-  }, []);
+    dispatch(getCharacterDetail(detailId));
+
+    return () => {
+      dispatch(cleanDetail());
+    };
+  }, [detailId]);
 
   return (
     <div className={style3.ContainerDetail}>
