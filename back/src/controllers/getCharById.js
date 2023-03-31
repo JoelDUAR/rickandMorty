@@ -20,22 +20,20 @@ const getCharById = (res, id) => {
 }
 
 module.exports = getCharById */
+
+
 const {KEY, URL} = process.env;
 const axios = require('axios');
 
-
-const getCharById = (req, res) => {
+const getCharById = async (req, res) => {
     const {id} = req.params;
-
-    axios.get(`${URL}/character/${id}?key=${KEY}`)
-    .then((response) => {
+     axios.get(`${URL}/character/${id}?key=${KEY}`)
+     .then((response) => {
         const {id, name, gender, species, image} = response.data;
         res.status(200).json({id, name, gender, species, image})
-    })
-    .catch((error) => {
+     }).catch((error)=>{
         res.status(500).json({error: error.message})
-    })
-    
+     }) 
 }
 
 module.exports = getCharById 

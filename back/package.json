@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest --detectOpenHandles",
     "start": "nodemon ./src/server.js"
   },
   "author": "Joel Dupraz",
@@ -19,5 +19,9 @@
     "express": "^4.18.2",
     "morgan": "^1.10.0",
     "nodemon": "^2.0.21"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0",
+    "supertest": "^6.3.3"
   }
 }
