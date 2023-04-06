@@ -1,4 +1,5 @@
 import {
+  ADD_FAVORITE,
   REMOVE_FAVORITE,
   ORDER,
   FILTER,
@@ -10,6 +11,10 @@ import axios from "axios";
 
 const URL_BASE = "http://localhost:3001";
 
+export const addFavorites = (character) => {
+  return { type: ADD_FAVORITE, payload: character}
+};
+
 export const removeFavorite = (id) => {
   return { type: REMOVE_FAVORITE, payload: id };
 };
@@ -18,8 +23,8 @@ export const filterCards = (gender) => {
   return { type: FILTER, payload: gender };
 };
 
-export const orderCards = (id) => {
-  return { type: ORDER, payload: id };
+export const orderCards = (order) => {
+  return { type: ORDER, payload: order };
 };
 
 export const getCharacterDetail = (id) => {
