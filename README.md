@@ -1,6 +1,10 @@
 <h1 align="center"> 👋 Rick & Morty Project! 👋</h1>
 Hello, my name is Joel Dupraz, I am a student of Henry, of the Fullstack developer career and I present my Rick and Morty integrator project, developed according to the knowledge I learned in Front end, in Back end and database. It also consumes resources of a corresponding Api.
 
+![Foto][1]
+
+[1]: ./front/src/assets/img/imagen-readme.png
+
 
 <h2 align="left">📋 Pre-requisites 📋</h2>
 
@@ -11,7 +15,7 @@ Username: admin@hotmail.com
 Password: 1password
 ```
 
-<h2 align="left">🔧 Instalación 🔧</h2>
+<h2 align="left">🔧 Instalation 🔧</h2>
 
 If you want to be able to have this project, you can apply the following command in your console: 
 
@@ -32,7 +36,15 @@ npm start
 
 Great, now you can see this application running in your browser. Success with those modifications.🚀🚀
 
-<h2 align="left">📄 Features 📄</h2>
+<h2 align="left">⚙️ Running the tests ⚙️</h2>
+
+You can run some tests on the "back", open the terminal in the corresponding folder and type the command:
+
+```
+npm test
+```
+
+<h2 align="left">🛠️ Features 🛠️</h2>
 
 <h3 align="left">Front end</h3>
 
@@ -91,7 +103,7 @@ Includes the following dependencies:
 As mentioned above, this project uses the [Rick & Morty API](https://rickandmortyapi.com/) to display data about characters, episodes and all the information that you will be able to find when you go through this project.
 
 
-<h2 align="left">⚡ Developer ⚡</h2>
+<h2 align="left">✒️ Developer ✒️</h2>
 
 - Joel Dupraz
 
