@@ -31,12 +31,14 @@
   
   }
 
-  @media only screen and (max-width: 376px){
+  @media only screen and (max-width: 680px){
 
-    .inputSearch{
-        width: 18vw;
+    .inputSearch, .inputSearch:hover, .inputSearch:active{
+        width: 15vw;
         height: 4vh;
         }
-
+       
+            
+           
   }
 

@@ -36,8 +36,8 @@
 }
 
 .imageCard{
-    width: 25vw;
-    height: 31vh;
+    width: 22vw;
+    height: 28vh;
     border-radius: 20px;
 }
 
@@ -76,26 +76,50 @@
 }
 
 .buttonFav{
+    height: 3vh;
+    width: 3vw;
     border-radius: 50%;
     margin-top: 0.4vh;
     background-color: #3649f8;
 }
 
 @media only screen and (min-width: 1280px) and (max-width: 1921px){
-    .buttonFav{
-        width: 3vw;
-        height: 3vh;
+    .divContenedor{
+        height: 75vh;
+    }
+
+    .divContenedor:hover{
+        background: rgba(6, 167, 254, 0.539);
+        box-shadow: 10px 5px 50px 4px rgba(6, 167, 254, 0.096); 
+        width: 18vw;
+        height: 77vh;  
+    }
+
+    .imageCard{
+        width: 20vw;
+        height: 30vh;
+        border-radius: 20px;
+    }
+    
+    .buttonFav{  
+        line-height: 1vh;
     }
 
 }
 
 @media only screen and (max-width: 1280px) {
     .divContenedor{
-        width: 26vw;
+        width: 27vw;
+        height: 68vh;
     }
     
     .divContenedor:hover{
-        width: 27vw;
+        width: 24vw;
+    }
+    .imageCard{
+        width: 20vw;
+        height: 22vh;
+        border-radius: 20px;
     }
 
     .btnClose{
@@ -109,17 +133,22 @@
         height: 3vh;
     }
 
+    
+    .buttonFav{  
+       width: 6vw;
+    }
+
 }
 
 @media only screen and (max-width: 680px) {
     .divContenedor{
-        width: 87vw;
+        width: 68vw;
         height: 72vh;
         background: rgba(6, 167, 254, 0.651);
     }
 
     .divContenedor:hover{
-        width: 91vw;
+        width: 72vw;
         height: 76vh;
     }
 
@@ -132,22 +161,21 @@
 }
 
     .divContenedorImg{
-        width: 70vw;
+        width: 60vw;
         display: flex;
         justify-content: center;
         margin-top: 2vh;
     }
     
     .imageCard{
-        width: 70vw;
-        height: 31vh;
+        width: 55vw;
+        height: 35vh;
     }
 
     .btnClose{
         width: 8vw;
         height: 4vh;
        }
-
 
        .buttonFav{
         width:10vw;

@@ -132,7 +132,6 @@
   width: 10vw;
   height: 10vh;
   margin-top: 2vh;
-  right: 0;
   display: flex;
   justify-content: center;
 }
@@ -140,16 +139,15 @@
 .button {
   background: rgb(2, 148, 2);
   width: 70%;
-  line-height: 4;
   margin: 1.5em;
   color: white;
   position: relative;
   border-radius: 5px;
-  vertical-align: middle;
   font-weight: bold;
   font-size: 80%;
-  text-align: center;
-  
+ display: flex;
+ justify-content: center;
+ align-items: center;
 }
 .button:before {
   content: "";
@@ -187,10 +185,7 @@
 
   .button{
     height:70%;
-
   }
-
- 
 }
 
 @media only screen and (max-width: 555px){

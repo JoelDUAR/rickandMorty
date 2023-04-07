@@ -99,13 +99,14 @@
       width: 90vw;
     height: 7vh;
     display: flex;
+    justify-content: center;
     margin-top: 0,4em;
     padding: 0.9em;
   }
 
   .Logo{
     margin-top: 0.5vh;
-      width: 100%;
+      width: 60%;
       height: 90%;
   }
 

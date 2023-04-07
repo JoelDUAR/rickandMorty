@@ -14,15 +14,15 @@
     font-family: monospace;
     font-size: 300%;
     position: relative;
-    top: -15vw;
+    top: -19vw;
 }
 
 
-@media only screen and (max-width: 376px) {
+@media only screen and (max-width: 680px) {
 
     .loading{
-        color: rgba(255, 255, 255, 0.995);
-        top:0vw;
+        color: rgba(3, 0, 79, 0.995);
+        top:-30vh;
     }
 
 
