@@ -6,9 +6,12 @@ import {
   GET_CHARACTER_DETAIL,
   CLEAN_DETAIL,
   GET_FAVORITES,
+  LOGIN,
+  LOGOUT,
 } from "./actions-types";
 
 const initialState = {
+  User: {access: false},
   myFavorites: [],
   allCharacters: [],
   characterDetail: {},
@@ -58,7 +61,14 @@ function rootReducer(state = initialState, action) {
       return{
         ...state, myFavorites: action.payload
       };
-
+    case LOGIN:
+      return{
+        ...state, User: action.payload
+      }
+    case LOGOUT:
+      return{
+        ...state, User: action.payload
+      }
     default:
       return { ...state };
   }

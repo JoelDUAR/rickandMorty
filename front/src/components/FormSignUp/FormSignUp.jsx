@@ -1,12 +1,12 @@
 import { useState } from "react";
-import { validate } from "./validation.js";
-import style from "./Form.module.css";
-import { useDispatch } from "react-redux";
-import { loginAction } from "../../redux/actions.js";
-import { Link } from "react-router-dom"
+import { validate } from "../Form/validation";
+import style from "../Form/Form.module.css";
+import axios from "axios";
+import {useNavigate} from "react-router-dom";
 
-const Form = (props) => {
-  const dispatch = useDispatch();
+const FormSignUp = (props) => {
+  const navigate = useNavigate();
+  const URL_BASE = "http://localhost:3001";
   const [userData, setUserData] = useState({
     username: "",
     password: "",
@@ -25,22 +25,30 @@ const Form = (props) => {
     setErrors(validate({ ...userData, [property]: value }));
   };
 
-  
+  const postUser = async (userdata) => {
+    const response = await axios.post(
+      `${URL_BASE}/rickandmorty/login`,
+      {
+        email: userData.username,
+    password: userData.password,
+      }
+    );
+ return response.data
+  };
 
   const handleSubmit = (event) => {
     event.preventDefault();
     // eslint-disable-next-line
-    dispatch(loginAction(userData.username, userData.password));
-      props.login();
-    
-    
+
+    postUser();
+    navigate("/")
   };
 
   return (
     <div className={style.box}>
       <div className={style.mainDiv}>
         <form onSubmit={handleSubmit} className={style.form}>
-          <h2 className={style.titulo}>Login</h2>
+          <h2 className={style.titulo}>Sign up</h2>
           <div className={style.containerInput}>
             <label htmlFor="username">Email: </label>
             <input
@@ -65,12 +73,8 @@ const Form = (props) => {
           </div>
           <div className={style.containerButton}>
             <button className={style.button} type="submit">
-              LOGIN
+              New User
             </button>
-          </div>
-          <div className={style.containerButtonSignUp}>
-            <span className={style.spanSignUp}>¿Usuario no registrado?</span>
-            <Link to="/signup" className={style.buttonSignUp}>SIGN UP</Link>
           </div>
         </form>
       </div>
@@ -78,4 +82,4 @@ const Form = (props) => {
   );
 };
 
-export default Form;
+export default FormSignUp;

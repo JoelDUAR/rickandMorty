@@ -26,7 +26,7 @@
   flex-direction: column;
   align-items: center;
   width: 60vw;
-  height: 60vh;
+  height: 75vh;
 }
 
 .form::before {
@@ -161,10 +161,56 @@
   transition: all 0.3s;
 }
 
-
 .button:hover:before {
-        width: 100%;
-        color: rgb(104, 104, 197);
+  width: 100%;
+}
+
+.containerButtonSignUp {
+  width: 30vw;
+  height: 6vh;
+  margin-top: 2vh;
+  display: flex;
+  justify-content: center;
+}
+
+.spanSignUp{
+background-color: rgba(0, 66, 247, 0.413);
+border-radius: 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 10px;
+color: white;
+}
+
+.buttonSignUp {
+  background: rgb(2, 46, 148);
+  width: 30%;
+  margin: 0.5em;
+  color: white;
+  position: relative;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 80%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.buttonSignUp:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 100%;
+  background: rgba(44, 104, 243, 0.324);;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all 0.3s;
+}
+
+.buttonSignUp:hover:before {
+  width: 100%;
 }
 
 @media only screen and (min-width: 1200px){

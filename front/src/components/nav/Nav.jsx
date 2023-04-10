@@ -28,7 +28,7 @@ render(){
           <Link to="/favorites">
             <span className={style.Links}>Favorites</span>
           </Link>
-          <Link onClick={()=>this.props.logout()}><span className={style.Links}>Logout</span></Link>
+          <Link to="/" onClick={()=>this.props.logout()}><span className={style.Links}>Logout</span></Link>
       </div>
       <div className={style.containerSearch}>
         <SearchBar onSearch={this.props.onSearch}/>
